@@ -1,4 +1,5 @@
-﻿import type { MetadataRoute } from "next";
+﻿
+import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://software-portfolio-five-pi.vercel.app";
@@ -15,12 +16,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
-    },
-    {
-      url: "https://modupath-modi.vercel.app/",
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9,
     },
   ];
 }
